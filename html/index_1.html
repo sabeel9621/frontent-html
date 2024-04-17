@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* background-color: rgb(37, 37, 37); */
+
+        }
+
+        form {
+            margin: auto;
+            width: 30%;
+            /* padding: 20px 20px; */
+            border-radius: 5px;
+            /* background: white; */
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+            margin-top: 10%;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+ border: 2px solid rgba(113, 101, 101, 0.367)
+
+        }
+
+        input {
+            padding:5px;
+            width: 90%;
+            margin-left: 20px;
+         background-color: rgba(252, 249, 249, 0.474);
+         height: 35px;
+        /* border:1px solid rgb(205, 203, 203); */
+        border: none;
+        margin-top: 5px;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+        }
+
+        h1 {
+            /* margin-top: 10%; */
+            text-align: center;
+            color: rgb(43, 81, 176);
+            font-size: 25px;
+            border-bottom: 2px solid rgb(250, 247, 247);
+            /* background-color: white; */
+            padding: 5px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-shadow:0px 1px;
+        }
+
+label{
+    /* background-color: white; */
+    font-size: 25px;
+    color: rgb(119, 255, 0);
+margin-left: 20px;
+
+}
+
+
+        .btn {
+            margin: auto;
+            /* width: 50%; */
+            margin-top: 20px;
+border-radius: 10px;
+        }
+
+        button {
+            background-color: rgb(12, 44, 126);
+border-radius: 5px;
+            height: 30px;
+            width: 90%;
+            /* margin-right: 30%; */
+            color:white;
+            margin-left: 20px;
+
+border: none;
+        }
+
+        button:hover {
+            background-color: rgb(0, 110, 255);
+            cursor: pointer;
+
+        }
+        .background-image {
+  /* position: fixed; */
+  /* width: 100vh; */
+  height: 60vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmQrYurlL2HedXf6ujqZE_qnpvMLIMIeZOu3OsMAlJgWenHD9GkYAgwWfBbiXuKHbYbo&usqp=CAU');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  z-index: -1; /* Ensures this element is behind other content */
+}
+    </style>
+</head>
+
+<body>
+
+    <form>
+  <div class="background-image">
+    <h1>Sing up</h1><br>
+        <label for="">name</label>
+        <input type="text"
+            placeholder="Enter your name "><br><br>
+        <label for="">Email</label>
+        <input type="text"
+            placeholder="Enter your Email"><br><br>
+            <label for="">password</label>
+        <input type="text"
+            placeholder="Eenter your password"><br><br>
+
+
+        <div class="btn">
+            <button>submit</button>
+        </div>
+
+
+  </div>
+
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 800px;
+            
+        }
+
+
+        .container{
+
+            height: 100vh;
+            border: 2px solid black;
+            background-color: yellow;
+            position: relative;
+            /* position: sticky; */
+        }
+
+        .container img{
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .header{
+
+            height: 10%;
+            width: 100%;
+            border: 2px solid yellow;
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 0px 0px 15px 15px;
+
+
+        }
+
+        .content{
+
+            text-align: center;
+            position: absolute;
+            top: 200px;
+            left: 430px;
+            color: white;
+        }
+
+        .content button{
+
+            padding: 10px 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .content h2,p{
+
+            margin:10px 0px;
+        }
+
+        .header ul{
+
+            color: white;
+            text-align: right;
+            margin-right: 20px;
+
+        }
+
+        .header ul li{
+
+            display: inline-block;
+            margin: 15px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .header ul li:hover{
+
+            color: yellow;
+        }
+
+        .content button:hover{
+
+            background-color: rgb(232, 232, 134);
+            cursor: pointer;
+        }
+        .home{
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 5px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <img src="https://images.unsplash.com/photo-1703622603380-83dbd6e182ec?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+       <div class="header">
+          <ul>
+            <li class="home">Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Register</li>
+          </ul>
+       </div>
+
+       <div class="content">
+          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis animi aspernatur quis perspiciatis <br> provident, corporis nisi eligendi iste fugiat odio ratione omnis, laborum quas amet quod eveniet molestias veritatis!</p>
+          <button>Submit</button>
+       </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        table{
+            border: 2px solid black;
+            width: 30%;
+            margin: auto;
+            border-collapse: collapse;
+
+            /* height: 20%; */
+        }
+        td,th{
+            border: 2px solid black;
+            height: 40px;
+            padding: 5px;
+        }
+        .male{
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        h4{
+            text-align: center;
+            font-style: italic;
+            margin-top:5% ;
+            padding: 10px;
+
+        }
+        .table{
+            width: 20%;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .content{
+
+            text-align: center;
+            position: absolute;
+            top: 280px;
+            left: 0px;
+            color: rgb(253, 252, 252);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <h4>A test tabel with merge cells</h4>
+        <tr>
+            <th class="table" rowspan="3"> </th>
+        </tr>
+        <tr>
+            <th colspan="2" >average</th>
+            <th rowspan="2">Red <p>eyes</p></th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+        <tr>
+            <td class="male" >males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td class="male" >females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+         <div class="content">
+            <h2>i ama good boy</h2>
+         </div>
+    </div>
+</body>
+</html>
