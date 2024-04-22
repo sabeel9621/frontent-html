@@ -1,0 +1,4235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+.header{
+    border: 2px solid black;
+    width: 100vw;
+    margin: auto;
+    background-color: blue;
+    /* position:sticky; */
+    /* top: 0; */
+
+}
+.upper-header{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* padding: 0.9em; */
+    flex-wrap: wrap;
+}
+.left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left a{
+    padding: 10px;
+    margin: 0.2rem;
+    font-size: 16px;
+    color:white;
+    border: 1px solid white;
+    border-radius: 100px;
+
+}
+.fa-brands{
+    width: 15px;
+}
+.right{
+    /* padding: 0.5rem; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.right span{
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.right i{
+    padding: 5px;
+
+}
+
+/* .lower-header{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    border: 2px solid green;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+
+}
+
+
+.lower-header ul {
+    display: flex;
+
+
+}
+.lower-header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+.menu{
+    height: 20px;
+    width: 20px;
+    display: none;
+
+    background-color: blue;
+    transition: all 1s ease-in-out;
+    transform: translate(-50);
+    position: absolute;
+}
+
+.lower-header:hover .menu{
+ display: block;
+}
+
+
+
+ .over{
+
+        height: 100px;
+        width: 100px;
+
+        left: 0px;
+        display: none;
+        transition: all 2s ease-in-out;
+      }
+      .list:hover .over{
+        transform: translateY(-150);
+      }
+ */
+
+ .lower-header{
+            width: 94%;
+            margin: auto;
+            border: 1px solid rgb(189, 188, 188);
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            align-items: center;
+
+        }
+.left1{
+    padding: 10px;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.left1 i{
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+      .header-ul{
+
+        display: flex;
+        /* border: 2px solid black; */
+        height: 50px;
+        padding:30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .header-ul li{
+
+        margin: 20px;
+        list-style: none;
+        height: 100%;
+        font-size: 20px;
+        /* padding: 20px; */
+        font-family: sans-serif;
+      }
+
+      .overflow{
+
+         /* display: none; */
+         height: 110px;
+         width: 100px;
+         background-color: rgb(19, 19, 218);
+         position: absolute;
+         top: 110px;
+         transition: all 1s ease-in-out;
+         /* z-index: 1; */
+      }
+
+
+      .menu{
+        display: none;
+        position: absolute;
+        top: 60px;
+        color: white;
+        font-family: sans-serif;
+        text-transform: capitalize;
+
+      }
+
+      .p{
+        height: 62%;
+      }
+
+      /* .header-ul li:nth-child(3){
+        color: red;
+
+      } */
+
+      .blank{
+        /* color: red; */
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+
+      }
+      .blank:hover .menu{
+        display: block;
+        cursor: pointer;
+      }
+
+      .blank:hover .overflow{
+
+        display: block;
+        transform: translateY(-110px);
+        background-color: blue;
+      }
+.over{
+     height: 110px;
+         width: 80px;
+         position: absolute;
+         left: 140px;
+         top: 100px;
+         transition: all 1s ease-in-out;
+         z-index: 1;
+         background-color: blue;
+         /* background: transparent; */
+         /* display: none; */
+}
+
+
+
+
+.over:hover {
+    display: block;
+    transform: translatey(-92%);
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 115vh;
+    /* border: 2px solid black; */
+    background-image: url(https://themewagon.github.io/travela/img/carousel-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        position: relative;
+    /* position: relative; */
+}
+
+
+.content{
+    width: 60%;
+    margin:6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content p:nth-child(1){
+    color: rgb(255, 254, 254);
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: 0.5rem;
+
+}
+h1{
+    font-size: 4.6rem;
+    margin-top:3rem;
+    color: white;
+    font-family: sans-serif;
+}
+ .content p:nth-child(3){
+    font-size: 20px;
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+ button{
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    padding: 12px 55px;
+    border-radius: 50px;
+    margin-top: 30px;
+
+ }
+
+.button button{
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: all 0.8s ease-in-out;
+    background-color: blue;
+    color: #ffffff;
+}
+
+.button:hover button{
+    transform: translatez(-50%);
+    background-color: white;
+    color: black;
+}
+
+
+
+.container1{
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid rgb(9, 9, 9); */
+    position: relative;
+    padding: 50px 40px;
+background-color: rgba(19, 53, 123, 0.8) ;
+    border-radius: 100px;
+    top: -50%;
+    transform: translateY(-50%)
+
+}
+.position{
+width: 95%;
+height: 50px;
+margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+}
+
+
+.btn button{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: blue;
+    color: #ffffff;
+    font-size:20px ;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border: none;
+}
+input{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+}
+
+.mid-cont{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.image{
+    /* width: 85%; */
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-grow: calc(1); */
+
+}
+
+@media (max-width:1442px) {
+    .image{
+        flex-direction: column;
+    }
+
+}
+.box {
+    width: 600px;
+    /* flex-grow:calc(1); */
+    /* border: 2px solid blue; */
+}
+.box img{
+    width: 400px;
+    border: 50px solid;
+    border-color:  transparent #13357B transparent #13357B;
+
+}
+
+.box1{
+    width: 600px;
+    /* border: 2px solid pink; */
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(https://themewagon.github.io/travela/img/about-img-1.png);
+    background-repeat:repeat-x;
+    background-size: center;
+    background-position: center;
+    background-size:30%;
+}
+.h5{
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 28px;
+    left:120px ;
+    width: 60px;
+}
+h5{
+    font-size: 20px;
+    font-weight: 100;
+    color: #13357b;
+}
+h2{
+    margin: 1.5rem 0rem;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+h2 span{
+    color: #13357b;
+}
+p{
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.5;
+}
+
+.lorem{
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+}
+.vontent{
+    width: 80%;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    /* margin: auto; */
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  p i{
+ color: #13357B;
+ }
+
+ .submit button{
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #13357B;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 1s ease-in;
+    /* display: none; */
+ }
+ button:hover {
+    display: block;
+    transform:translatez(-50%);
+    background-color: rgb(247, 248, 248);
+    color: black;
+ }
+
+ /* third container css start */
+
+ h3{
+    width: 50%;
+    margin: auto;
+ }
+
+
+ .container3{
+    width: 100%;
+margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+background-color: #f2f2f2;
+
+ }
+ h3{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    line-height: 0em;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #13357B
+
+ }
+ h3 span{
+    background-color: #f2f2f2;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+ }
+ .container3 h2{
+    /* color: red; */
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0;
+    margin: 10px;
+
+ }
+
+ .divition{
+    /* width: 85%; */
+    margin: 18px 18px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+ }
+
+ .service-content{
+    width:630px;
+
+    /* border: 2px solid yellow; */
+    /* flex-grow: calc(1); */
+ }
+.left-cnt{
+ width: 605px;
+     background-color: #ffffff;
+ border: 1px solid rgb(139, 137, 137);
+ border-radius: 20px;
+ margin: 1.5rem 0rem;
+ transition: all 0.6s ease-in-out;
+ display: flex;
+
+
+ align-items: center;
+ /* flex-grow: calc(1); */
+}
+.service{
+    text-align:right;
+}
+.mb-1{
+    /* width: 90%; */
+    font-size: 1.5rem;
+    margin:1.2rem 0.5rem;
+    color: black;
+    /* border: 2px solid black; */
+    font-family: sans-serif;
+    transition: all 0.6s ease-in-out;
+
+
+}
+.mb-0{
+    font-size:18px;
+    margin:0.6rem;
+    transition: all 0.8s ease-in-out;
+}
+.icon i{
+    margin: 15px;
+    color: #13357b;
+    transition: all 0.6s ease-in-out;
+}
+ .left-cnt:hover   {
+  /* transform: translatey(50%); */
+  color: white;
+  background-color: #13357b;
+ }
+ .left-cnt:hover .mb-1{
+    color: white;
+ }
+  .left-cnt:hover .mb-0{
+
+    color: white;
+
+  }
+  .left-cnt:hover i{
+
+    color: white;
+
+  }
+
+
+
+.service-content1{
+    width: 630px;
+
+    /* border: 2px solid blue; */
+    /* overflow: hidden; */
+    /* flex-grow: calc(1); */
+}
+.right-cnt{
+    width: 630px;
+    background-color: #ffffff;
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 20px;
+margin: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    /* flex-grow: calc(1); */
+
+
+}
+ .right-cnt .service{
+   text-align: left;
+ }
+.right-cnt:hover   {
+  /* transform: translatey(50%); */
+  color: white;
+  background-color: #13357b;
+
+
+ }
+ .right-cnt:hover .mb-1{
+    color: white;
+    transform:scalez(1.5);
+ }
+  .right-cnt:hover .mb-0{
+
+    color: white;
+
+  }
+  .right-cnt:hover i{
+
+    color: white;
+
+  }
+
+
+
+
+
+ .sirvice-more button{
+background-color: #13357b;
+color: #ffffff;
+font-size: 1.5rem;
+padding: 1rem 1.5rem;
+border: none;
+transition: all 0.8s ease-in-out;
+text-transform: capitalize;
+margin: 0;
+margin-bottom: 5rem;
+
+
+ }
+ .sirvice-more:hover button{
+ /* transform: translatey(-50px); */
+background-color: white;
+color: black;
+
+ }
+
+/*     container4 css started */
+
+.main-container{
+    width: 100%;
+margin: auto;
+    /* border: 2px solid black;/ */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+}
+
+.main-container h2{
+    margin: 5px;
+    font-weight: 300;
+}
+.main-container span{
+    background-color: #ffffff;
+}
+
+.main-cont2{
+ /* width: 85%; */
+ margin: auto;
+/* border: 2px solid green ; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 10px;
+
+}
+
+.buts{
+    /* width: 70%; */
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.but{
+    border: 1px solid #13357b;
+    margin: 20px;
+
+
+}
+.but:hover{
+    background-color: #efefef;
+    cursor:pointer;
+}
+.col1{
+    border: 1px solid #13357B;
+    background-color: #13357b;
+    color: #ffffff;
+    margin: 20px;
+}
+.col1:hover{
+    background-color: #13357B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+.inner1{
+    width: 420px;
+    /* border: 2px solid blue; */
+}
+.row1{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 18px  auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row1:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row1:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row1:hover .col{
+    transform: translate(-150px);
+    display: block;
+}
+
+.row2{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row2:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row2:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row2:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+ .row3{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row3:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row3:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row3:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.con p:hover{
+    color: blue;
+}
+.con p i:hover{
+    color: blue;
+}
+
+
+.inner2{
+    width: 400px;
+    /* border: 2px solid yellow; */
+}
+
+.row4{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row4 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row4:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row4:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row4:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+.row5{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row5 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row5:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row5:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 15px 15px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row5:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.row6{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row6 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row6:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row6:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row6:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+.inner3{
+
+    width: 430px;
+    /* border: 2px solid purple; */
+}
+
+.row7{
+    width: 400px;
+    height: 615px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    /* height: 300px; */
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row7 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row7:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row7:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row7:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.row8{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:10px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row8 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row8:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row8:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row8:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+/* container 4 css start */
+/* hjhsjhJSHJHSJHSJshj */
+
+
+.main-container2{
+    width: 100%;
+margin: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+}
+
+.main-container h2{
+    margin: 5px;
+    font-weight: 300;
+}
+.main-container2 span{
+    background-color: #ffffff;
+}
+.main-container2 p{
+    width: 52%;
+    text-align: center;
+
+}
+
+
+.explore{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    /* line-height: 0em; */
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    /* border: 1px solid #13357B; */
+}
+
+.main-cont1{
+ /* width: 85%; */
+ margin: auto;
+border: 2px solid green ;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;
+
+/* justify-content: space-evenly; */
+
+}
+.sum{
+    /* border: 2px solid ; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.sum button{
+    /* border: 2px solid yellow; */
+    margin: 0px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    /* padding: px 40px; */
+}
+.national{
+    padding: 12px 45px;
+    color: white;
+    font-size: 18px;
+    background-color: #13357B;
+    border: none;
+}
+.International{
+    border: 1px solid blue;
+    font-size: 18px;
+    padding: 12px 40px;
+
+}
+ .national:hover{
+    background-color: #13357B;
+    cursor: pointer;
+    color: #fffefe;
+ }
+
+.item1{
+    width: 400px;
+    /* border: 2px solid yellow; */
+
+}
+
+.colom{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+.colom1{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom1:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom1:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+
+.item2{
+    width: 400px;
+    /* border: 2px solid red; */
+}
+
+.colom2{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom2:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom2:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+.colom3{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom3:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom3:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ .tour {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    background-color: #ffc107;
+    color: #ffffff;
+    font-size: 20px;
+}
+.item3{
+    width: 400px;
+    /* border: 2px solid black; */
+}
+
+.colom4{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom4 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom4:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 100;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom4:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ .towr {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    background-color: #07ffff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.colom5{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:10px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom5 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom5:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 100;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom5:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ p:hover{
+    color: #13357b;
+
+}
+
+
+/* main-container3 css started */
+
+.section6{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid green; */
+    padding-top: 12%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+article{
+    width: 15%;
+    margin: auto;
+    padding: 0px;
+    /* text-align: center; */
+    line-height: 0em;
+    margin: 5px 0px 5px;
+    margin-left: 10px;
+    border: 1px solid #13357B
+
+ }
+ article i{
+    background-color:white;
+    padding: 0px 15px;
+    color: #13357B;
+    /* font-size: 20px; */
+    text-transform:uppercase;
+    font-family: sans-serif;
+    /* text-align: center; */
+ }
+ .section6 h2{
+margin: 20px;
+font-family: normal;
+ }
+ .arrow{
+    width: 82%;
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+ }
+ .left-arrow i{
+    /* font-size: 20px; */
+    border: 1px solid #13357B;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #13357B;
+ }
+
+
+ .right-arrow{
+border: 1px solid #13357B;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #13357B;
+ }
+
+
+.main{
+    width: 82%;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 22px;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.first-div{
+    /* width: 400px; */
+    /* height: 800px; */
+    border-radius: 15pxpx;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    border-radius: 15px;
+    margin-bottom:15px ;
+
+}
+
+
+.main-container3 {
+                height: 400px;
+                width: 400px;
+                /* border: 2px solid black; */
+                background-color: rgb(62, 57, 212);
+                border-radius: 10px 10px 0px 0px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+            }
+
+
+
+            .big{
+                height: 0px;
+                width: 0px;
+                /* border: 2px solid black; */
+                background-color: rgb(101, 100, 100);
+                opacity: 0.5;
+                position: absolute;
+                transition-property: background-color, border-radius, height,
+                    width;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                animation-name: big;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+
+                animation: box 0.8s infinite linear;
+
+                transition: all 0.8s ease-in;
+            }
+            .main-container3:hover .big {
+                display: block;
+            height: 800px;
+            width: 800px;
+
+          transform:rotate(45deg) ;
+          transform:scale(0.8);
+          /* transform: skewX(-60deg);
+          transform: skewY(30deg);
+          transform: translateX(-400px);
+          transform: translateY(400px); */
+
+            }
+
+
+             .image1{
+                width: 100%;
+                height: 100%;
+                transition: all 0.8s ease-in-out;
+                position: absolute;
+
+
+            }
+ img{
+    transition: all 0.8s;
+
+
+ }
+
+            .main-container3:hover  img{
+                transform: scale(1.5);
+            }
+
+
+.main-container4{
+    width: 400px;
+    position: relative;
+    background-color: #d7d5d5;
+    /* border: 2px solid green; */
+
+}
+
+
+.price{
+    position: absolute;
+    background-color: #13357b;;
+    top: 0px;
+    left: 40%;
+    color:#ffffff;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.package{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.package i{
+    margin: 5px;
+}
+.package p:nth-child(1){
+    border: 2px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+   /* font-size: 20px; */
+   background-color: rgb(173, 173, 151);opacity:0.8 ;
+}
+.package p:nth-child(2){
+    width:25%;
+    border-top: 2px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+   /* font-size: 20px; */
+   background-color: rgb(173, 173, 151);opacity:08 ;
+}
+.package p:nth-child(3){
+    width: 32%;
+    border: 2px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+background-color: rgb(173, 173, 151);opacity:08;
+   /* font-size: 20px; */
+}
+.package i{
+    color: white;
+}
+
+
+.package1{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.package1 i{
+    margin: 5px;
+}
+.package1 p:nth-child(1){
+    border: 1px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+   /* font-size: 20px; */
+   /* background-color: rgb(173, 173, 151);opacity:0.8 ; */
+}
+.package1 p:nth-child(2){
+    width:25%;
+    border-top: 1px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+   /* font-size: 20px; */
+   /* background-color: rgb(173, 173, 151);opacity:08 ; */
+}
+.package1 p:nth-child(3){
+    width: 32%;
+    border: 1px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+   /* font-size: 20px; */
+}
+.package1 i{
+    color: white;
+}
+
+.package2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.package2 i{
+    margin: 5px;
+}
+.package2 p:nth-child(1){
+    border: 1px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+
+}
+.package2 p:nth-child(2){
+    width:25%;
+    border-top: 1px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+
+}
+.package2 p:nth-child(3){
+    width: 32%;
+    border: 1px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+   /* font-size: 20px; */
+}
+.package2 i{
+    color: white;
+}
+
+
+
+
+
+.cat h4,span,h5{
+    font-size: 20px;
+    margin: px 20px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.cat h4{
+    font-family: sans-serif;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.cat h5{
+    font-size: 17px;
+}
+
+.cat p{
+    /* font-size: 18px; */
+    margin: 8px 20px;
+    /* text-align:justify; */
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* border: 2px solid blue; */
+    background-color: #13357b;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+/* section4 css end  */
+
+/* section 5 csss start */
+
+
+
+
+.container-gallery{
+    width: 100%;
+    margin: auto;
+    border: 2px solid black;
+}
+.gallery{
+    /* width: 99%; */
+    margin:auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+
+
+}
+
+.gallery-item1{
+    /* border: 2px solid yellow; */
+    width: 240px;
+
+    /* margin: 0px 10px; */
+    /* height: 250px; */
+}
+.first-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.first-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.first-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 20px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.first-item:hover .iconic{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.gallery-item2{
+    /* border: 2px solid yellow; */
+    width: 350px;
+    /* margin: 0px 10px; */
+    /* height: 250px; */
+}
+
+.second-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.second-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 240px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+}
+
+
+.second-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic{
+
+        position: absolute;
+        top: 120px;
+    left:220px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.second-item:hover .iconic{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.third-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:auto;
+    margin:3% 0;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.third-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+
+}
+
+
+.third-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:220px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.third-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.forth-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin: auto;
+    /* margin-top: 4%; */
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.forth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+
+}
+
+
+.forth-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.forth-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+.gallery-item3{
+    /* border: 2px solid yellow; */
+    width: 240px;
+    /* margin: 0px 10px; */
+
+    /* height: 250px; */
+}
+
+.fifth-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.fifth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.fifth-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.fifth-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.sex-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.sex-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.sex-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.sex-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.gallery-item4{
+    /* border: 2px solid yellow; */
+    width: 350px;
+    /* margin: 0px 10px; */
+    /* margin: 10px; */
+    /* height: 250px; */
+}
+
+.seven-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:3% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.seven-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-left: 50px;
+
+
+}
+
+
+.seven-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.seven-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.aerth-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:3% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.aerth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-left: 60px;
+
+
+
+}
+
+
+.aerth-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.aerth-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.gallery-item5{
+    /* border: 2px solid yellow; */
+    width: 240px;
+    /* height: 250px; */
+}
+
+
+.nine-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+        flex-grow: calc(2);
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.nine-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.nine-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.nine-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.ten-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+        flex-grow: calc(2);
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.ten-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.ten-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.ten-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.main10{
+    border: 2pxx solid red;
+}
+
+.emet{
+    /* width: 99%; */
+    margin: auto;
+    border: 2px solid yellow;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+gap: 5px;
+
+}
+
+.box5{
+    width: 250px;
+    height: 300px;
+    /* border: 2px solid red; */
+    margin:auto;
+    background-color: #13357B;
+        position: relative;
+        overflow: hidden;
+        /* box-shadow: 0px 0px 8px; */
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+        flex-grow: calc(2);
+        flex-shrink: calc(2);
+
+}
+
+img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.box5:hover img{
+    transform: scale(1.5);
+    opacity: 0.4;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.box-item{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.box5:hover .box-item{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.countinue{
+
+        position: absolute;
+        top: 120px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.box5:hover .countinue{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+
+
+#box6{
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    margin:auto;
+    background-color: #13357B;
+        position: relative;
+        overflow: hidden;
+        /* box-shadow: 0px 0px 8px; */
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+        flex-grow: calc(2);
+        flex-shrink: calc(2);
+}
+
+#image{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.box5:hover #image{
+    transform: scale(1.5);
+    opacity: 0.4;
+
+}
+
+
+.box-item2{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+#box6:hover .box-item2{
+    transform: translatey(-70px);
+}
+
+.countinue2{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+font-size: 40px;
+font-weight: bolder;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.box5:hover .countinue2{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="container">
+<div class="header">
+<div class="upper-header">
+    <div class="left">
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-youtube"></i></a>
+
+    </div>
+    <div class="right">
+<span><i class="fa-solid fa-user"></i>register</span>
+<span><i class="fa-solid fa-right-to-bracket"></i>login</span>
+<span><i class="fa-solid fa-house-chimney"></i>my dashbord <i class="fa-solid fa-caret-down">
+</i>
+</span>
+    </div>
+</div>
+</div>
+<!-- <div class="lower-header">
+    <div class="logo">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <span>travela</span>
+    </div>
+        <ul>
+            <li class="home">home</li>
+            <li class="home"></li>
+            <li>about</li>
+            <li></li>
+            <li>services</li>
+            <li></li>
+            <li>pakeges</li>
+            <li></li>
+            <li>blog</li>
+            <li></li>
+            <li class="blog">
+            <li class="pages">pages <i class="fa-solid fa-angle-down"></i></li>
+            <div class="over"></div>
+            <div class="menu">
+                <ol>
+                    <li>destination</li>
+                    <li>explore ture</li>
+                    <li>travel booking</li>
+                    <li>our gallery</li>
+                    <li>travel guides</li>
+                    <li>testimonial</li>
+                    <li>404 page</li>
+                </ol>
+            </div>
+</li>
+            <li>contact</li>
+        </ul>
+
+</div>
+
+ -->
+<div class="lower-header">
+<div class="left1">
+    <p><i class="fa-solid fa-location-dot"></i>travela</p>
+</div>
+<div class="right1">
+   <ul class="header-ul">
+            <li>Home</li>
+
+            <li class="About">About</li>
+            <div class="over"></div>
+            </li>
+            <li>services</li>
+            <li>packages</li>
+            <li>blog</li>
+
+            <li class="blank">
+                <div class="p">Page <i class="fa-solid fa-angle-down"></i></div>
+                <div class="overflow"></div>
+                <div class="menu">
+                    <ul>
+                        <li>distination</li>
+                        <li>Explore Tour</li>
+                        <li>Travel Booking</li>
+                        <li>Our Gallery</li>
+                        <li>Travel Guides</li>
+                        <li>Testimonial</li>
+                        <li>404 Page</li>
+                    </ul>
+                </div>
+            </li>
+            <li>contact</li>
+        </ul>
+    </div>
+    </div>
+
+
+<div class="content">
+    <p>EXPLORE THE WORLD</p>
+    <h1>Let's The World Together!</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
+</p>
+<div class="button">
+    <button>discover now</button>
+</div>
+
+</div>
+
+</div>
+<!-- <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
+            <div class="container">
+                <div class="position-relative style="background: rgba(19, 53, 123, 0.8);>
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%);">Search</button>
+                </div>
+            </div>
+        </div> -->
+
+
+<div class="container1">
+<div class="position">
+    <input type="text" placeholder="Eg:Thailand">
+    <div class="btn">
+        <button>search</button>
+    </div>
+</div>
+</div>
+
+
+<div class="mid-cont">
+    <div class="image">
+        <div class="box">
+        <img src="https://themewagon.github.io/travela/img/about-img.jpg" alt="">
+    </div>
+    <div class="box1">.
+    <h5>ABOUT US</h5> <h5 class="h5"></h5>
+        <h2>Welcome to <span>Travela</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda? Id atque iste consectetur. Commodi odit ab saepe!</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?</p>
+    <div class="vontent">
+        <div class="lft-cont">
+<p><i class="fa-solid fa-arrow-right"></i>First Class Flights</p>
+<p><i class="fa-solid fa-arrow-right"></i>5 Star Accommodations</p>
+<p><i class="fa-solid fa-arrow-right"></i>150 Premium City Tours</p>
+        </div>
+        <div class="right-cont">
+            <p><i class="fa-solid fa-arrow-right"></i>Handpicked Hotels</p>
+
+<p><i class="fa-solid fa-arrow-right"></i>Latest Model Vehicles</p>
+
+<p><i class="fa-solid fa-arrow-right"></i>24/7 Service</p>
+        </div>
+
+
+    </div>
+    <div class="submit">
+<button>Read more</button>
+</div>
+</div>
+
+
+    </div>
+</div>
+
+<div class="container3">
+
+    <h3><span>services</span></h3>
+          <h2>our services</h2>
+
+    <div class="divition">
+<div class="service-content">
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-globe fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >Hotel Reservation</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-hotel fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1"  >Travel Guides</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-user fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >Event Management</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-cog fa-4x text-primary"></i></div>
+</div>
+</div>
+<div class="service-content1">
+    <div class="right-cnt">
+    <div class="icon"><i class="fa fa-globe fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-hotel fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-user fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-cog fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+<div class="sirvice-more">
+<button>service more</button>
+</div>
+</div>
+
+
+<div class="main-container">
+    <h3><span>destination</span></h3>
+      <h2>Popular Destination</h2>
+    <div class="buts">
+        <button class="col1">All</button>    <button class="but">USA</button>    <button class="but">canada</button>    <button class="but">Europe</button>    <button class="but">China</button>    <button class="but">Singapore</button>
+    </div>
+
+<div class="main-cont2">
+<div class="inner1">
+<div class="row1">
+    <img src="https://themewagon.github.io/travela/img/destination-1.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>New York City</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row2">
+    <img src="https://themewagon.github.io/travela/img/destination-7.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row3">
+    <img src="https://themewagon.github.io/travela/img/destination-4.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+</div>
+<div class="inner2">
+    <div class="row4">
+    <img src="https://themewagon.github.io/travela/img/destination-2.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row5">
+    <img src="https://themewagon.github.io/travela/img/destination-8.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row6">
+    <img src="https://themewagon.github.io/travela/img/destination-8.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+</div>
+<div class="inner3">
+    <div class="row7">
+        <img src="https://themewagon.github.io/travela/img/destination-9.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>San francisco</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+    </div>
+    <div class="row8">
+        <img src="https://themewagon.github.io/travela/img/destination-6.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="main-container2">
+    <h3 class="explore"><span>EXPLORE TOUR</span></h3>
+    <h2>The World</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.</p>
+
+    <div class="sum">
+        <button class="national">National tour category</button><button class="International">International tour category</button>
+    </div>
+
+    <div class="main-cont1">
+        <div class="item1">
+            <div class="colom">
+                <img src="https://themewagon.github.io/travela/img/explore-tour-1.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>WEEKEND TOUR </h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+
+    <div class="colom1">
+            <img src="https://themewagon.github.io/travela/img/explore-tour-4.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>HISTORICAL TRIP</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+    </div>
+        </div>
+        <div class="item2">
+            <div class="colom2">
+                    <img src="https://themewagon.github.io/travela/img/explore-tour-2.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>HOLIDAY TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="colom3">
+                    <img src="https://themewagon.github.io/travela/img/explore-tour-5.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>FAMILY TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="tour">50 % off</div>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="colom4">
+                <img src="https://themewagon.github.io/travela/img/explore-tour-3.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>ROAD TRIP</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="towr">50 % off</div>
+            </div>
+            <div class="colom5">
+<img src="https://themewagon.github.io/travela/img/explore-tour-6.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>BEACH TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section6">
+ <article><i>PAKEGES</i></article>
+<H2>Awesome Packeges</H2>
+<div class="arrow">
+    <div class="left-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+    <div class="right-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+</div>
+
+<div class="main">
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-1.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package">
+<p><i class="fa-solid fa-location-dot"></i>Thayland</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+    <h4>Thayland Trip</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-3.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package1">
+<p><i class="fa-solid fa-location-dot"></i>Vanece Italy</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+    <h4>discover japan</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-4.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package2">
+<p><i class="fa-solid fa-location-dot"></i>Venice-Italy</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+      <h4>Vanece-Italy</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+</div>
+
+</div>
+    </div>
+</div>
+
+
+<div class="container-gallery">
+<div class="gallery">
+<div class="gallery-item1">
+ <div class="first-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-1.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+
+ </div>
+ <div class="second-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-6.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+
+</div>
+<div class="gallery-item2">
+    <div class="third-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-2.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+    <div class="forth-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-7.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+</div>
+<div class="gallery-item3">
+    <div class="fifth-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-3.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+
+ <div class="sex-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-8.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+</div>
+<div class="gallery-item4">
+    <div class="seven-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-4.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+
+    <div class="aerth-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-9.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+</div>
+<div class="gallery-item5">
+<div class="nine-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-5.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+
+</div>
+<div class="ten-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-10.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="main10">
+    <div class="emet">
+
+        <div class="box5">
+            <img src="https://themewagon.github.io/travela/img/gallery-1.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+        <div class="box5" id="box6">
+            <img id="image" src="https://themewagon.github.io/travela/img/gallery-2.jpg" alt="">
+       <div class="box-item2">
+            <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+       </div>
+       <div class="countinue2">
+            <sub><i class="fa-solid fa-plus"></i></sub>
+       </div>
+        </div>
+        <div class="box5">
+                <img src="https://themewagon.github.io/travela/img/gallery-1.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+        <div class="box5" id="box6">
+            <img id="image" src="https://themewagon.github.io/travela/img/gallery-4.jpg" alt="">
+       <div class="box-item2">
+            <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+       </div>
+       <div class="countinue2">
+            <sub><i class="fa-solid fa-plus"></i></sub>
+       </div>
+        </div>
+        <div class="box5">
+                <img src="https://themewagon.github.io/travela/img/gallery-5.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+        <div class="box5">
+                <img src="https://themewagon.github.io/travela/img/gallery-6.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+        <div class="box5" id="box6">
+            <img id="image" src="https://themewagon.github.io/travela/img/gallery-7.jpg" alt="">
+       <div class="box-item2">
+            <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+       </div>
+       <div class="countinue2">
+            <sub><i class="fa-solid fa-plus"></i></sub>
+       </div>
+        </div>
+        <div class="box5">
+                <img src="https://themewagon.github.io/travela/img/gallery-8.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+        <div class="box5" id="box6">
+            <img id="image" src="https://themewagon.github.io/travela/img/gallery-9.jpg" alt="">
+       <div class="box-item2">
+            <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+       </div>
+       <div class="countinue2">
+            <sub><i class="fa-solid fa-plus"></i></sub>
+       </div>
+        </div>
+        <div class="box5">
+                <img src="https://themewagon.github.io/travela/img/gallery-10.jpg" alt="">
+
+            <div class="box-item">
+                    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+            </div>
+            <div class="countinue">
+                    <sub><i class="fa-solid fa-plus"></i></sub>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
