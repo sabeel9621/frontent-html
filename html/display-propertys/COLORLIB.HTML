@@ -592,6 +592,7 @@ text-align: center;
                 margin: 10px;
 
             }
+
             .item1{
                 /* border: 2px solid red; */
                 width: 420px;
@@ -683,10 +684,13 @@ text-align: center;
 }
 .inner-container h3{
     font-size: 30px;
+    width: 300px;
+    border: 2px solid red;
 }
 
 .inner-container ol {
 display: flex;
+flex-wrap: wrap;
 
 }
 .inner-container ol li{
@@ -876,12 +880,15 @@ color:rgb(124, 121, 121);
  @media(max-width:570px){
     .sec-container{
         width: 100%;
+
     }
     .box1{
         width: 100%;
+
     }
     .box1 img{
         width: 100%;
+
     }
  }
 
@@ -1274,6 +1281,9 @@ color:rgb(124, 121, 121);
 }
 
 
+
+
+
 /* category csss started**************============================================
 ============================ */
 
@@ -1373,8 +1383,7 @@ color:rgb(124, 121, 121);
 
 }
 .top-footer{
-    border-bottom: 2px solid rgb(63, 61, 61);
-    border-width: 80%;
+    /* border-bottom: 2px solid rgb(63, 61, 61); */
     display: flex;
     justify-content:center;
     align-items: center;
@@ -1489,18 +1498,23 @@ margin: 10px;
 
 
 .middel-footer{
-    border-bottom: 2px solid rgb(69, 68, 68);
-    border-width:80%;
+    /* border-bottom: 2px solid rgb(69, 68, 68); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
     margin: 0;
     padding-top: 20px;
-
+border: none;
     /* align-items: center; */
     /* padding-top:30px ; */
      /* margin-bottom: 10rem; * */
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    opacity: 0.1;
 }
 
 .middel-footer h4{
@@ -1610,6 +1624,8 @@ font-family: sans-serif;
 .lower-footer{
     text-align: center;
     padding: 2rem;
+    position: relative;
+
 }
 .lower-footer  span{
     font-size: 18px;
@@ -1622,6 +1638,125 @@ font-family: sans-serif;
 .lower-footer span a{
     color: red;
 }
+
+/* .transition{
+    border: 2px transparent;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            overflow: hidden;
+            background-color:red ;
+            border-radius: 50px;
+            left: 0;
+            top: 100px;
+
+
+} */
+
+.transition-box{
+            border: 2px transparent;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            overflow: hidden;
+            background-color:red ;
+            border-radius: 50px;
+            z-index:6;
+            right: 20px;
+            bottom: 15px;
+        box-shadow: 0 0 10px black;
+
+        }
+        .arrow{
+            /* border: 2px solid yellow; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index:5;
+
+            /* overflow: hidden; */
+        }
+        .arrow1{
+            /* border: 2px solid yellow; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index:5;
+
+
+        }
+
+        .arrow i{
+        width: 40px;
+        text-align: center;
+        font-size: 30px;
+
+                /* height: 400px; */
+                /* border: 2px solid green; */
+                border-radius: 50px;
+                transition-property: background-color, border-radius, height,
+                    width;
+                transition-duration:1s;
+                transition-timing-function: ease-in-out;
+                animation-name: arrow;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                position: absolute;
+                top:5px;
+
+
+        }
+        .arrow1 i{
+        width: 40px;
+        text-align: center;
+        font-size: 30px;
+                /* height: 400px; */
+                /* border: 2px solid green; */
+                border-radius: 50px;
+                transition-property: background-color, border-radius, height,
+                    width;
+                transition-duration:1s;
+                transition-timing-function: ease-in-out;
+                animation-name:arrow1;
+                animation-duration:2s;
+                animation-iteration-count: infinite;
+                position: absolute;
+                top:0px;
+        }
+            @keyframes arrow{
+                from {
+                    transform: transtaley(0px);
+                    color:transparent;
+
+                }
+
+                to {
+                    transform: translatey(-80px);
+                    /* display: block; */
+                     color: white;
+
+                }
+            }
+            @keyframes arrow1{
+                from {
+                    transform: transtaley(0px);
+                    color:transparent;
+
+                }
+
+                to {
+                    transform: translatey(-80px);
+                    /* display: block; */
+
+                 color:white;
+                }
+            }
 
 
 
@@ -2052,7 +2187,7 @@ font-family: sans-serif;
             </div>
         </div>
     </div>
-
+<hr>
     <div class="middel-footer">
         <div class="logo-colorlib">
             <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/logo/logo2_footer.png.webp" alt="">
@@ -2100,17 +2235,25 @@ font-family: sans-serif;
 </ul>
     </div>
     </div>
-
+<hr>
 <div class="lower-footer">
     <span>Copyright ©2024 All rights reserved | This template is made with <a href=""><i class="fa-solid fa-heart"></i></a> by </span>
     <span id="color">Colorlib</span>
 </div>
-</div>
 
 <div class="transition">
     <div class="transition-box">
-        
+        <div class="arrow">
+         <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <div class="arrow1">
+         <i class="fa-solid fa-angle-up"></i>
+        </div>
     </div>
 </div>
+
+</div>
+
+
     </body>
 </html>
