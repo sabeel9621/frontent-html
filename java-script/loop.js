@@ -7,6 +7,7 @@
 //     i++
 // }
 
+
 //   table print
 // let a = 2;
 // let i = 1;
@@ -15,6 +16,8 @@
 //     console.log(a + " x " + i + " = " + (a * i));
 //     i++;
 // }
+
+
 
 
 // let marks = 95;
@@ -31,21 +34,32 @@
 //     console.log(100)
 // }
 
-
-// let a = 50;
+// let a = 5;
 // let i = 1;
-// while (i <=10) {
-//     console.log(a + " x " + i + " = " + (a * i));
+// while (i <= 10) {
+//     console.log(a + "=" + i + "=" + (a * i));
 //     i++;
 // }
 
 
+// natural number from 1 to n
 
+// let a = 1;
+// while (a <= 10) {
+//     console.log(a);
+//     a++
+// }
+
+
+//  reverse number
 // let a = 100;
 // while (a >= 1) {
 //     console.log(a)
 //     a--
 // }
+
+
+//  print all alphabet from a to z while loop
 
 // let a = 'a';
 // while (a<= 'z') {
@@ -57,7 +71,7 @@
 
 // // Initializing i = 65 for Uppercase:
 // i = 65;
-// // console.log("Alphabets form (A-Z) are:");
+// console.log("Alphabets form (A-Z) are:");
 
 // while (i <= 90) {
 //     console.log(String.fromCharCode(i));
@@ -66,7 +80,7 @@
 
 
 // let a = 1;
-// while (a <= 100) {
+// while (a <= 5) {
 //     console.log(a)
 //     a++
 // }
@@ -85,27 +99,22 @@
 // }
 
 
-// let i = 65;
-// while (i <= 90) {
-//     console.log(String.fromCharCode(i));
-//     i++;
-// }
-
-
 // even number from 1 to 100
 // let a = 2;
-// while (a <= 100) {
+// while (a <= 50) {
 
 //     if (a % 2 === 0) {
 //         console.log(a);
 //     }
-//     a +=2;
+//     a ++;
 // }
+
+
 
 
 // odd number from 1 to 100
 // let i = 1;
-// while (i <= 100) {
+// while (i <= 50) {
 
 
 //     if (i % 2 !== 0) {
@@ -124,8 +133,6 @@
 //     i++
 //     console.log(sum);
 // }
-
-
 
 // some of even natural number
 // let sum = 0
@@ -150,6 +157,7 @@
 // }
 
 
+
 // multiplication tabel of any number
 
 // let a = 5;
@@ -161,8 +169,9 @@
 
 
 
+
 // Write a Java Script Program to count number of digits in a number.
-// const count = (n) => {
+// let count = (n) => {
 //     let a = n;
 //     if (n < 0) {
 //         a = -(n)
@@ -181,7 +190,18 @@
 // console.log(count(4666));
 // console.log(count(-314890));
 // console.log(count(654321));
-// console.log(count(638476));
+// console.loleyg(count(638476));
+
+
+let a = 2;
+
+    for (let i = 1; i <= 10; i++){
+
+        if (a % 2 == 0) {
+            console.log(i);
+        }
+    }
+
 
 
 // Write a Java Script Program to find first and last digit of a number

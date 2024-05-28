@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            #firsttext {
+                width: 15%;
+                height: 8rem;
+            }
+
+            #secondtext {
+                width: 40%;
+                height: 8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea name="" id="firsttext"></textarea>
+        <h1>Css propeteis</h1>
+
+        <input type="text" id="color" placeholder="chose your color" />
+        <input type="text" id="bgColor" placeholder="chose your bgColor" />
+        <input type="text" id="fontsize" placeholder="fontsize" />
+        <br /><br />
+        <textarea name="" id="secondtext"></textarea>
+        <p id="count-digit">total latters :</p>
+
+        <script>
+            document
+                .getElementById("firsttext")
+                .addEventListener("input", function () {
+                    document.getElementById("secondtext").value = this.value;
+                    document.getElementById("count-digit").innerText =
+                        "charecter count" + this.value.length;
+                });
+
+            document
+                .getElementById("color")
+                .addEventListener("input", function () {
+                    document.getElementById("secondtext").style.color =
+                        this.value;
+                });
+
+            document
+                .getElementById("bgColor")
+                .addEventListener("input", function () {
+                    document.getElementById(
+                        "secondtext"
+                    ).style.backgroundColor = this.value;
+                });
+
+            document
+                .getElementById("fontsize")
+                .addEventListener("input", function () {
+                    document.getElementById("secondtext").style.fontSize =
+                        this.value;
+                });
+        </script>
+    </body>
+</html>

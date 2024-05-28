@@ -57,15 +57,15 @@
 
 
 
-// conditions
+conditions
 
-// console.log(7>8)
-// console.log(9<=9)
-// console.log('a'>'b')
-// console.log('A'<'B')
-// console.log(6=='6')
-// console.log(7!=='7')
-// console.log('Z' > 'z')
+console.log(7>8)
+console.log(9<=9)
+console.log('a'>'b')
+console.log('A'<'B')
+console.log(6=='6')
+console.log(7!=='7')
+console.log('Z' > 'z')
 
 
 // logical operator
@@ -453,10 +453,10 @@
 
 
 
-function printAlphabets () {
-    for (let i = 97; i <= 122; i++){
-        let alphabet = String.fromCharCode(i);
-        console.log(alphabet);
-    }
-}
-printAlphabets();
+// function printAlphabets () {
+//     for (let i = 97; i <= 122; i++){
+//         let alphabet = String.fromCharCode(i);
+//         console.log(alphabet);
+//     }
+// }
+// printAlphabets();
