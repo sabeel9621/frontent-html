@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            /* border: 2px solid black; */
+            width: 400px;
+            height: 480px;
+            padding-bottom:2rem;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            /* background-color: hsl(0, 0%, 50%); */
+
+        }
+
+      .box {
+
+        /* max-width:350px; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* border-radius: 50px; */
+        padding: 20px;
+        gap: 15px;
+        cursor: pointer;
+        /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+       }
+
+       .btn{
+        width: 70px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        border: none;
+
+       }
+
+     .input{
+
+font-size: 2rem;
+width: 80%;
+margin:15px;
+margin-top: 30px;
+padding: 2rem 1.5rem;
+text-align: end;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+     }
+       #button1{
+
+        background-color:rgb(235, 96, 10);
+       }
+       #button1:hover{
+
+        background-color:rgb(254, 100, 5);
+       }
+       #button1:active{
+        background-color: hsl(0, 0%, 100%);
+       }
+       #button2{
+         color: rgb(114, 114, 236);
+        /* background-color:rgb(235, 96, 10); */
+       }
+       .btn:hover{
+        background-color: hsl(0, 0%, 80%);
+       }
+       .btn:active{
+        background-color: hsl(0, 0%, 100%);
+       }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+ <input type="text" class="input"><br>
+ <div class="box" id="box">
+
+
+ <button class="btn" value="AC" id="button2">AC</button>
+ <button class="btn" value="DEl" id="button2">DEL</button>
+ <button class="btn" value="%" id="button2">%</button>
+ <button class="btn" value="/">/</button>
+ <button class="btn" value="7">7</button>
+
+ <button class="btn" value="8">8</button>
+ <button class="btn" value="9">9</button>
+ <button class="btn" value="*">*</button>
+
+ <button class="btn" value="4">4</button>
+ <button class="btn" value="5">5</button>
+
+ <button class="btn" value="6">6</button>
+ <button class="btn" value="-">-</button>
+ <button class="btn" value="1">1</button>
+ <button class="btn" value="2">2</button>
+ <button class="btn" value="3">3</button>
+ <button class="btn" value="+">+</button>
+ <button class="btn" value="00">00</button>
+ <button class="btn" value="0">0</button>
+ <button class="btn" value=".">.</button>
+ <button class="btn" value="=" id="button1">=</button>
+
+</div>
+
+    </div>
+
+<script>
+
+
+
+
+     let b=document.querySelectorAll(".btn");
+
+    for(let i of b){
+        i.onclick=function(){
+
+            if(i.innerText=="="){
+
+                let inp=document.querySelector("input").value;
+
+                document.querySelector("input").value=eval(inp);
+
+                console.log(eval(inp));
+
+            }
+else if(i.innerText=="DEL"){
+
+                let a=document.querySelector("input").value;
+            document.querySelector("input").value=a.slice(0,-1);
+         }
+            else{
+
+                document.querySelector("input").value += i.innerText;
+            }
+        }
+
+        document.querySelector('#button2').onclick= function() {
+    document.querySelector("input").value = '';
+        }
+};
+
+
+//    let b=document.querySelectorAll(".btn");
+
+//     for (let i of b){
+
+//         i.onclick=function(){
+//             if(i.innerText=="="){
+
+//                 let inp=document.querySelector("input").value;
+//                 document.querySelector("input").value=eval(inp);
+//                 console.log( eval(inp));
+//             }
+
+//                  else if(i.innerText=="DEL"){
+
+//                 let a=document.querySelector("input").value;
+//             document.querySelector("input").value=a.slice(0,-1);
+//         }
+
+
+//         else{
+//             document.querySelector("input").value +=i.innerText;
+//         }
+//         }
+
+//         document.querySelector("#button2").onclick=function(){
+//             document.querySelector("input").value="";
+//         }
+//     }
+</script>
+
+</body>
+</html>
