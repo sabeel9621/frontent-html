@@ -20,7 +20,7 @@
 // let b = 'm'
 // console.log(typeof b)
 // let c = true;
-//
+
 
 // let e = Symbol(5);
 // let f = Symbol(5);
@@ -57,15 +57,15 @@
 
 
 
-conditions
+// conditions
 
-console.log(7>8)
-console.log(9<=9)
-console.log('a'>'b')
-console.log('A'<'B')
-console.log(6=='6')
-console.log(7!=='7')
-console.log('Z' > 'z')
+// console.log(7>8)
+// console.log(9<=9)
+// console.log('a'>'b')
+// console.log('A'<'B')
+// console.log(6=='6')
+// console.log(7!=='7')
+// console.log('Z' > 'z')
 
 
 // logical operator

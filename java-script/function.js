@@ -1,7 +1,16 @@
+
+let num = 1;
+for (let i = 1; i <= 10; i++){
+
+}
+console.log(num);
+
+
+
 //1 ************** natural 1 to n *****************
 
 // function naturalNumbrer (n) {
-//     for (let i = 1; i <= n; i++){
+//     for (let i 1; i <= n; i++){
 //         console.log(i);
 //     }
 // }
@@ -239,8 +248,8 @@
 // function add(a,b=30){
 //     return a+b
 // }
-// let ans=add(10,20)
-// console.log(ans)
+// let an=add(10,20)
+// console.log(an)
 
 
 // function add(a,b=30){
@@ -326,7 +335,6 @@
 
 // }
 // let ans= naturalnumber(10)
-
 // ----------------------------------------------------------
 // Write a Java Script Program to print all natural numbers in reverse (from n to 1). – using while loop
 // ans.
@@ -339,8 +347,18 @@
 // let ans= naturalnumber(10)
 
 // -----------------------------------
-
 // ----------------------------------------
+
+
+// function oddNumber () {
+//     for (let i = 1; i < 10; i++){
+//         if (i % 2 !== 0) {
+//             console.log(i);
+//         }
+//     }
+// }
+// oddNumber();
+
 // Write a Java Script Program to print all even numbers between 1 to 100. – using while loop
 // ans.
 // function evennumber(n){
@@ -678,7 +696,7 @@
 // }
 // let ans =febonicca(6)
 // ---------------------------------
-// 
+//
 
 //-------------------------------
 //Write a Java Script Program to find frequency of each digit in a given integer.

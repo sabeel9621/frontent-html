@@ -246,15 +246,15 @@
 // console.log(x.slice(2));
 // console.log(x.slice(2, 6));
 
-// let x = [100, 200, 300, 400, 500, 600, 700, 800, 900]
+let x = [100, 200, 300, 400, 500, 600, 700, 800, 900]
 
 // x.splice(3, 5, "aman", "annu");
-// x.splice(-4, 3, "aman", "anil");
+x.splice(-4, 3, "aman", "anil");
 
 // let a = x.splice(1, 7);
 // let b = x.splice(0, 4)
 
-// console.log(x);
+console.log(x);
 // console.log(a);
 
 // let x = [100, 200, 300, 400, 500, 600, 700, 800, 900]
