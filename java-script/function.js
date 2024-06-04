@@ -1,10 +1,4 @@
 
-let num = 1;
-for (let i = 1; i <= 10; i++){
-
-}
-console.log(num);
-
 
 
 //1 ************** natural 1 to n *****************

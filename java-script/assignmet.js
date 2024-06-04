@@ -1,4 +1,4 @@
-const user = [
+const userdata = [
     {
         "id": "1",
         "username": "Prajjal Dhar",
@@ -460,7 +460,165 @@ const user = [
 
 
 
-//  const python = user.filter(user => user.skills.includes('Python'));
-//  console.log(python);
+// answers of all questions===================
+// ==============================================
+
+
+// QuestionsHow would you get an array of user emails of all users who are admins
+
+// const adminUsers = userdata .filter(user => user.role === "admin");
+
+// const adminEmails = adminUsers.map(admin => admin.useremail);
+
+// console.log(adminEmails);
+
+
+// const python = userdata.filter(user => user.skills.includes('Python'));
+// console.log(python);
+
+// const userolderthan30 = userdata.filter(user => user.age > 30)
+
+// console.log(userolderthan30);
+
+// const userlive = userdata.filter(user => user.city === 'Goa').map(user => user.username);
+// console.log(userlive);
+
+
+// salary greterthan 100000
+
+// const salary = userdata.filter(user => user.salary > 1000000);
+// console.log(salary)
+
+
+// const femaleuser = userdata.filter(user => user.gender==='Female');
+
+// console.log(femaleuser);
+
+
+// const firstName = userdata.filter(user => user.role==='customer');
+
+// const costumer=firstName.map(user=>user.firstName)
+
+// console.log(costumer);
+
+
+// const customerFirstNames = userdata
+//     .filter(user => user.role === 'customer').map(user => user.firstName);
+
+// console.log(customerFirstNames);
+
+// How would you get an array of users who have 'JavaScript' as one of their skills ?
+
+
+// const userJavaScriptSkill = userdata.filter(user => user.skills.includes('JavaScript'));
+
+// console.log(userJavaScriptSkill);
+
+// How would you get an array of users who live in 'Mumbai' and have a salary less than 800,000 ?
+
+// const userlive = userdata.filter(user => user.city === 'Mumbai' && user.salary < 800000);
+// console.log(userlive);
+
+// How would you get an array of male users who are customers
+
+// const malecustomer = userdata.filter(user => user.gender === 'Male' && user.role === 'customer');
+// console.log(malecustomer);
+
+
+// find questions
+
+// const UserInNewDelhi = userdata.find(user => user.city === 'New Delhi');
+// console.log(UserInNewDelhi);
+
+// How would you find the first user who has the skill 'React' ?
+
+// const userskil = userdata.find(user => user.skills.includes('React'));
+// console.log(userskil);
+
+// How would you find the first user who is an admin and lives in 'Jaipur' ?
+
+// const firstAdmin = userdata.find(user => user.role === 'admin' && user.city === 'jaipur');
+
+// console.log(firstAdmin);
+
+
+//  const firstAdminInJaipur = userdata.find(user => user.role === 'admin' && user.city === 'Jaipur');
+
+//  console.log(firstAdminInJaipur);
+
+// How would you find the first user with a salary of exactly 900,000 ?
+
+// const salary = userdata.find(user => user.salary === 900000);
+// console.log(salary);
+
+
+// How would you find the first user whose username is 'Rahul Verma' ?
+
+
+// const Username = userdata.find(user => user.username === 'Rahul Verma');
+
+// console.log(Username);
+
+
+
+// Splice and Slice
+
+// How would you remove the first user who lives in 'Kolkata' from the array ?
+
+
+// const index = userdata.findIndex(user => user.city === 'Kolkata');
+
+// let newUsersArray = userdata;
+
+// if (index !== -1) {
+//
+//     newUsersArray = [...userdata.slice(0, index), ...userdata.slice(index + 1)];
+// }
+
+// console.log(newUsersArray);
+
+// How would you get a new array containing the first 5 users ?
+
+// const firstFiveUsers = userdata.slice(0, 5);
+
+// console.log(firstFiveUsers);
+
+
+// How would you get a new array containing the last 5 users ?
+
+// const last = userdata.slice(-5);
+
+// console.log(last);
+
+    //  How would you create a new array with users from the 3rd to the 7th position(inclusive)?
+
+// const selectedUsers = userdata.slice(2, 7);
+
+// console.log(selectedUsers);
+
+// const newUser = [
+//     {
+//         "id": "10",
+//         "username":"uttam sharma",
+//         "useremail": "uttam.sharma@gmail.com",
+//         "password": "Regex1234",
+//         "firstName": "uttam",
+//         "lastName": "sharma",
+//         "role": "admin",
+//         "gender": "Male",
+//         "age": 28,
+//         "city": "jaipur",
+//         "salary": 300000,
+//         "skills": [
+//             "Java",
+//             "Python"
+//         ]
+//     },
+// ]
+
+
+// userdata[10] = newUser;
+
+// console.log(userdata);
 
 
