@@ -19,19 +19,25 @@
 
 // let b = 'm'
 // console.log(typeof b)
-// let c = true;
+//  let c = true;
+// console.log(typeof c)
 
+// let d = null;
+// console.log(typeof d);
 
-// let e = Symbol(5);
-// let f = Symbol(5);
-// console.log(e == f);
+ //let e = Symbol(5);
+ //let f = Symbol(5);
+//console.log(e == f);
+//console.log( typeof e);
+
 
 // let a = {
+
 //     id: 1,
 //     name: "sabeel",
 //     city:"shahabad"
+//         }
 
-// }
 // console.log(typeof a)
 
 
@@ -41,7 +47,10 @@
 // console.log(typeof g)
 
 
-
+// let f = function name() {
+//     console.log('hello');
+//  }
+// console.log(typeof f);
 
 // opraters
 
@@ -82,6 +91,7 @@
 // a*=3
 // a /= 2
 // console.log(a)
+
 
 
 // let b = 7;
@@ -460,3 +470,5 @@
 //     }
 // }
 // printAlphabets();
+
+
