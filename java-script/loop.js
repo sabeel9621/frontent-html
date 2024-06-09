@@ -37,7 +37,7 @@
 // let a = 5;
 // let i = 1;
 // while (i <= 10) {
-//     console.log(a + "=" + i + "=" + (a * i));
+//     console.log(a + "*" + i + "=" + (a * i));
 //     i++;
 // }
 
@@ -193,14 +193,14 @@
 // console.loleyg(count(638476));
 
 
-let a = 2;
+// let a = 2;
 
-    for (let i = 1; i <= 10; i++){
+//     for (let i = 1; i <= 10; i++){
 
-        if (a % 2 == 0) {
-            console.log(i);
-        }
-    }
+//         if (a % 2 == 0) {
+//             console.log(i);
+//         }
+//     }
 
 
 
@@ -940,5 +940,10 @@ let a = 2;
 // }
 
 
-
+// let b = 2;
+// let i=1
+// while (i<=10) {
+//     console.log(b + "x" + i + "=" + (b * i));
+//     i++;
+// }
 
