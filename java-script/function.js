@@ -276,7 +276,7 @@
 //     console.log(" not prime number")
 // }
 
-// n prime number check ke liye
+// n prime number check karne ke liye
 // function primeNotprime(n){
 //     for(let i=1;i<n;i++){
 //         let flag=0;
@@ -315,11 +315,9 @@
 // else {
 //     console.log(" not a armstrong number")
 // }
-// 363 changes: 363 additions & 0 deletions363
-// java script / functionque.js
-// @@ -0, 0 + 1, 363 @@
 
-// Write a Java Script Program to print all natural numbers from 1 to n. – using while loop
+
+// Write a Java Script Program to print all natural numbers from 1 to n.
 
 // ans.
 // function naturalnumber(n){
@@ -330,7 +328,7 @@
 // }
 // let ans= naturalnumber(10)
 // ----------------------------------------------------------
-// Write a Java Script Program to print all natural numbers in reverse (from n to 1). – using while loop
+// Write a Java Script Program to print all natural numbers in reverse (from n to 1).
 // ans.
 // function naturalnumber(n){
 //     for(let i=n;i>=1;i--){
@@ -374,6 +372,7 @@
 //     }
 // }
 // let ans =oddnumber(100)
+
 
 // -----------------------------------------------
 // Write a Java Script Program to find sum of all natural numbers between 1 to n.

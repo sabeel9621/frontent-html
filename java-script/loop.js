@@ -144,7 +144,6 @@
 // console.log(sum)
 
 
-
 // sum  of all  odd number
 
 // let sum = 0;
@@ -946,4 +945,7 @@
 //     console.log(b + "x" + i + "=" + (b * i));
 //     i++;
 // }
+
+
+
 
